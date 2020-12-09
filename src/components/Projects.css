@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.project-container {
+	width: 1000px;
+	overflow: hidden;
+}
+
+.project-title {
+	font-size: 70px;
+	text-align: left;
+	margin: 50px 0 50px;
+}
+
+.project-card {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	margin-bottom: 70px;
+	margin-left: 50px;
+}
+
+.image {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.thumbnail {
+	width: 250px;
+	height: auto;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.description {
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.description-title {
+	font-size: 50px;
+	color: #00ffe9;
+	text-decoration: none;
+}
+
+.description-text {
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+	.project-container {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.project-container {
+		width: 80vw;
+	}
+
+	.project-title {
+		font-size: 50px;
+	}
+
+	.image {
+		width: 150px;
+		height: 150px;
+	}
+
+	.thumbnail {
+		width: 150px;
+	}
+
+	.description-title {
+		font-size: 30px;
+	}
+
+	.description-text {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.project-container {
+		width: 100vw;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.project-title {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.project-card {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+		margin-left: 0;
+	}
+
+	.description {
+		margin-left: 0;
+	}
+
+	.description h2 {
+		margin-top: 20px;
+	}
+}

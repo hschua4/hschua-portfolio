@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+	width: 1200px;
+	margin: 75px auto;
+	overflow: hidden;
+}
+
+.form {
+	width: 530px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.form h1 {
+	font-size: 50px;
+	color: #00ffe9;
+}
+
+.input {
+	background: white;
+	width: 530px;
+	height: 70px;
+	margin-bottom: 50px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 30px;
+	text-align: left;
+	padding-left: 20px;
+	color: black;
+}
+
+.names {
+	margin-top: 60px;
+}
+
+.message {
+	height: 280px;
+	padding: 20px;
+	resize: none;
+}
+
+.submit-btn {
+	height: 70px;
+	width: 200px;
+	border: 3px solid #00ffe9;
+	outline: none;
+	font-size: 30px;
+	color: #00ffe9;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	background: black;
+}
+
+.submit-btn:hover {
+	cursor: pointer;
+	font-size: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+	.contact {
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.form {
+		width: 80vw;
+	}
+	.form h1 {
+		font-size: 40px;
+	}
+
+	.input {
+		width: 80vw;
+		font-size: 25px;
+	}
+}
